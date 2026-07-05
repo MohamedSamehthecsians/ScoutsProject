@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جوالة الحلمية </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <style>
+  .info-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.4s;
+  }
+  .info-row:hover {
+    background: #f8f9fa;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  }
+  .info-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%; /* شكل دائري كما في رسمك */
+    transition: 0.4s;
+  }
+  .info-img:hover { transform: scale(1.1); }
+  
+  .info-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: none;
+    border-bottom: 4px solid #064e3b; /* أخضر زمردي */
+    cursor: pointer;
+  }
+  
+  .info-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.2);
+    border-bottom-color: #d4af37; /* ذهبي عند الهافير */
+  }
+  
+  .brand-name {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background: linear-gradient(90deg, #28a745, #d4af37, #28a745);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 4s linear infinite;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+
+  .brand-name:hover {
+    transform: scale(1.05);
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+  }
+
+  @keyframes shine {
+    to { background-position: 200% center; }
+  }
+
+  .subtitle {
+    color: #555;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+  /* تنسيق اللوجو */
+  .brand-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #d4af37; /* إطار ذهبي */
+    transition: all 0.5s ease;
+    cursor: pointer;
+  }
+
+  .brand-logo:hover {
+    transform: scale(1.1) rotate(5deg); /* حركة خفيفة للوجو */
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+  }
+
+  /* تنسيق الاسم (كما صممناه سابقاً) */
+  .brand-name {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-top: 20px;
+    background: linear-gradient(90deg, #28a745, #d4af37, #28a745);
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 4s linear infinite;
+  }
+
+  @keyframes shine { to { background-position: 200% center; } }
+</style>
+</style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+
+    <!--/////////////////////////=>nav<=/////////////////////////////////-->
+    <nav class="navbar navbar-expand-lg navbar-dark  shadow حغ-3" style="background-color: #28a745;">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="ورشتنـــــــــا الفنية.png" width="40" height="40" class="me-2 rounded-circle" alt="...">
+                <span class="fw-bold">جوالة حلمية الزيتون </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-6" href="index3.html" >الجوالة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-6" href="index.html">مركز شباب الحلمية </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-6" href="index2.html">حالات الطوارئ</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+
+
+<section class="text-center py-5" data-aos="fade-down">
+  <!-- اللوجو -->
+  <img src="WhatsApp Image 2026-06-28 at 5.21.42 PM.jpeg" alt="Logo" class="brand-logo shadow">
+  
+  <!-- الاسم -->
+  <h1 class="brand-name">جوالة حلمية الزيتون</h1>
+  
+  <!-- الوصف -->
+  <p class="subtitle mt-2">نُبنى بالقيم.. ونُزهر بالعطاء</p>
+  
+  <!-- خط فاصل جمالي -->
+  <div class="d-flex justify-content-center mt-3">
+    <div style="width: 60px; height: 3px; background: #28a745; border-radius: 2px;"></div>
+  </div>
+</section>
+
+
+
+
+
+    <main class="container my-5">
+  <!-- القسم الأول: الصورة يميناً -->
+  <div class="info-row" data-aos="fade-right">
+    <img src="WhatsApp Image 2026-06-28 at 5.21.42 PM.jpeg" class="info-img border border-3 border-success" alt="تاريخ">
+    <div>
+      <h3 class="text-success">تاريخ الحركة</h3>
+      <p>نبذة مختصرة عن تاريخ الحركة الكشفية وكيف بدأت، مع التركيز على قيمها العريقة.</p>
+    </div>
+  </div>
+
+  <!-- القسم الثاني: الصورة يساراً (باستخدام flex-row-reverse) -->
+  <div class="info-row flex-row-reverse text-end" data-aos="fade-left">
+    <img src="WhatsApp Image 2026-03-27 at 3.39.12 PM.jpeg" class="info-img border border-3 border-success" alt="الوعد">
+    <div>
+      <h3 class="text-success">الوعد الكشفي</h3>
+      <p>الوعد هو ميثاق الشرف الذي يربط كل جوال بمبادئه ووطنه.</p>
+    </div>
+  </div>
+
+  <!-- القسم الثالث: الصورة يميناً -->
+  <div class="info-row" data-aos="fade-right">
+    <img src="WhatsApp Image 2026-06-28 at 5.21.42 PM.jpeg" class="info-img border border-3 border-success" alt="القانون">
+    <div>
+      <h3 class="text-success">قانون الجوالة</h3>
+      <p>مجموعة القواعد التي تضبط سلوك الجوال وتجعله عضواً نافعاً في المجتمع.</p>
+    </div>
+  </div>
+</main>
+<main class="container my-5">
+  <!-- قسم التعريفات الأساسية -->
+
+
+  <!-- قسم الأنشطة (نظام الكروت) -->
+  <h2 class="text-center text-success mb-5">أنشطة فريق الجوالة</h2>
+  <div class="row g-4">
+    <div class="col-md-4" data-aos="zoom-in">
+      <div class="card h-100 shadow-sm border-0">
+        <img src="WhatsApp Image 2026-06-28 at 5.21.42 PM.jpeg" class="card-img-top" alt="تخييم">
+        <div class="card-body"><h5>رحلات التخييم</h5><p>خوض تجارب التعايش في الطبيعة وتطوير مهارات الاعتماد على النفس.</p></div>
+      </div>
+    </div>
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+      <div class="card h-100 shadow-sm border-0">
+        <img src="WhatsApp Image 2026-03-27 at 3.39.12 PM.jpeg" class="card-img-top" alt="خدمة عامة">
+        <div class="card-body"><h5>الخدمة العامة</h5><p>مبادرات مجتمعية تهدف لخدمة وتطوير منطقة حلمية الزيتون.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+      <div class="card h-100 shadow-sm border-0">
+        <img src="WhatsApp Image 2026-03-27 at 3.39.12 PM.jpeg" class="card-img-top" alt="مهارات">
+        <div class="card-body"><h5>تنمية المهارات</h5><p>ورش عمل دورية في الإسعافات، الإشارات، وفنون القيادة.</p></div>
+      </div>
+    </div>
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+      <div class="card h-100 shadow-sm border-0">
+        <img src="WhatsApp Image 2026-03-27 at 3.39.12 PM.jpeg" class="card-img-top" alt="مهارات">
+        <div class="card-body"><h5>تنمية المهارات</h5><p>ورش عمل دورية في الإسعافات، الإشارات، وفنون القيادة.</p></div>
+      </div>
+    </div>
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+      <div class="card h-100 shadow-sm border-0">
+        <img src="WhatsApp Image 2026-03-27 at 3.39.12 PM.jpeg" class="card-img-top" alt="مهارات">
+        <div class="card-body"><h5>تنمية المهارات</h5><p>ورش عمل دورية في الإسعافات، الإشارات، وفنون القيادة.</p></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
+     <footer class="text-white mt-auto py-4" style="background-color: #28a745;">
+    <div class="container">
+        <div class="row text-center text-md-start">
+            <!-- القسم الأول -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="fw-bold mb-3">جوالة حلمية الزيتون</h5>
+                <p class="mb-0">نعمل لخدمة المجتمع</p>
+            </div>
+            
+            <!-- القسم الثاني -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="fw-bold mb-3">روابط سريعة</h5>
+                <ul class="list-unstyled mb-0">
+                    <li><a class="nav-link text-white fs-6 p-1" href="index3.html">الجوالة</a></li>
+                    <li><a class="nav-link text-white fs-6 p-1" href="index.html">مركز شباب الحلمية</a></li>
+                    <li><a class="nav-link text-white fs-6 p-1" href="index2.html">حالات الطوارئ</a></li>
+                </ul>
+            </div>
+            
+            <!-- القسم الثالث -->
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5 class="fw-bold mb-3">تواصل معنا</h5>
+                <p class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i>حلمية الزيتون - القاهرة</p>
+                <p class="mb-0"><i class="bi bi-telephone-fill me-2"></i>اتصل بنا: 01278071535</p>
+            </div>
+        </div>
+        
+        <hr class="border-light my-4">
+        
+        <!-- حقوق النشر والمطور -->
+        <div class="text-center mb-5">
+            <p class="mb-2">&copy; جميع الحقوق محفوظة لجوالة مركز حلمية الزيتون</p>
+            <div class="pb-2 text-white">
+                Development by: 
+                <a href="profile.html" class="text-white text-decoration-none fw-semibold">
+                    Philopateer Arnst
+                </a>
+                and
+                <a href="mohamed.html" class="text-white text-decoration-none fw-semibold">
+                    Mohamed Sameh
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
