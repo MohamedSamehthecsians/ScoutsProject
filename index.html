@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>جوالة الحلمية </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <style>
@@ -153,6 +154,11 @@
   .videos2{
     flex-direction: row-reverse;
   }
+  .gallery_me{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .linky{
     position: relative;
     font-size: 20px;
@@ -186,14 +192,32 @@
     transform: scale(1.1);
     transition: 0.3s;
   }
+  .wah{
+    width: 25%;
+    display: flex;
+      justify-content: center;
+  }
   .mibombo{
     display: flex;
     flex-direction: column;
+  }
+  @media screen and (max-width:1399px) {
+    .wah{
+      width: 33.3333333%;
+    }
+  }
+  @media screen and (max-width:1199px) {
+    .wah{
+      width: 50%;
+    }
   }
   @media screen and (max-width:763px) {
     .videos1,.videos2{
       flex-direction: column;
       gap: 10px;
+    }
+    .wah{
+      width: 100%;
     }
     .mibombo{
       gap: 50px;
@@ -216,10 +240,10 @@
 
 
    
-    <nav class="navbar navbar-expand-lg navbar-dark  shadow حغ-3" style="background-color: #28a745;">
+    <nav class="navbar navbar-expand-lg navbar-dark  shadow-3" style="background-color: #28a745;">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="ورشتنـــــــــا الفنية.png" width="40" height="40" class="me-2 rounded-circle" alt="...">
+                <img src="./media/مركز شباب الحلمية.jpg" width="40" height="40" class="me-2 rounded-circle" alt="...">
                 <span class="fw-bold">جوالة حلمية الزيتون </span>
             </a>
 
@@ -252,7 +276,7 @@
 <section class="text-center py-5" data-aos="fade-down">
  
 
-  <img src="WhatsApp Image 2026-06-28 at 5.21.42 PM.jpeg" alt="Logo" class="brand-logo shadow">
+  <img src="./media/مركز شباب الحلمية.jpg" alt="Logo" class="brand-logo shadow">
   
 
   <h1 class="brand-name">جوالة حلمية الزيتون</h1>
@@ -272,13 +296,13 @@
     <div class="col-md-6 mb-3">
       <div class="card p-4 shadow">
         <h4 class="text-success">رسالة المركز</h4>
-        <p>نعمل على تنمية مهارات الشباب وخدمة المجتمع المحلي في حلمية الزيتون من خلال أنشطة كشفية هادفة.</p>
+        <p> نعمل على تنمية مهارات الشباب وخدمة المجتمع المحلي في حلمية الزيتون من خلال أنشطة هادفة</p>
       </div>
     </div>
     <div class="col-md-6 mb-3">
       <div class="card p-4 shadow">
         <h4 class="text-success">رؤية المركز</h4>
-        <p>أن نكون المنارة الأولى للشباب في منطقتنا، لنصنع جيلاً واعياً ومشاركاً بفعالية في نهضة الوطن.</p>
+        <p>أن نكون المنارة الأولى للشباب في منطقتنا، لنصنع جيلاً واعياً ومشاركاً بفعالية في نهضة الوطن</p>
       </div>
     </div>
   </div>
@@ -319,30 +343,94 @@
   <table class="table table-bordered table-hover text-center mb-0">
     <thead class="table-success">
       <tr>
-        <th>اسم النشاط</th>
-        <th>يوم 1</th>
-        <th>يوم 2</th>
-        <th>يوم 3</th>
-        <th>يوم 4</th>
-        <th>يوم 5</th>
-        <th>يوم 6</th>
-        <th>يوم 7</th>
-        
+        <th> النشاط</th>
+        <th> السبت</th>
+        <th> الاحد</th>
+        <th> الاثنين</th>
+        <th> الثلاثاء</th>
+        <th> الاربعاء</th>
+        <th> الخميس</th>
+        <th> الجمعة</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td>كاراتيه</td>
-        <td>5:00</td>
-        <td>5:00</td>
-        <td>5:00</td>
-        <td>5:00</td>
-        <td>5:00</td>
-        <td>5:00</td>
-        <td>5:00</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>7:00PM->8:30PM</td>
+        <td>-</td>
+        <td>-</td>
+        <td>5:00PM->6:30PM</td>
       </tr>
       <tr>
+        <td>كرة السلة</td>
         <td>-</td>
+        <td>-</td>
+        <td>6:00PM->8:00PM</td>
+        <td>-</td>
+        <td>-</td>
+        <td>7:00PM->9:00PM</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>كيك بوكس</td>
+        <td>-</td>
+        <td>-</td>
+        <td>7:00PM->8:30PM</td>
+        <td>-</td>
+        <td>-</td>
+        <td>7:00PM->8:30PM</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>كرة القدم</td>
+        <td>4:00PM->7:00PM</td>
+        <td>-</td>
+        <td>4:00PM->7:00PM</td>
+        <td>-</td>
+        <td>4:00PM->7:00PM</td>
+        <td>4:00PM->7:00PM</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>تايكندو</td>
+        <td>-</td>
+        <td>8:00PM->10:00PM</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>8:30PM->10:30PM</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>ملاكمة</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>8:30PM->10:00PM</td>
+        <td>-</td>
+        <td>-</td>
+        <td>6:30PM->8:00PM</td>
+      </tr>
+      <tr>
+        <td>كرة طائرة</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>5:00PM->7:00PM</td>
+        <td>-</td>
+        <td>5:00PM->7:00PM</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>كونغ فو</td>
+        <td>7:00PM->8:30PM</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+        <td>7:00PM->8:30PM</td>
         <td>-</td>
         <td>-</td>
       </tr>
@@ -353,55 +441,62 @@
 
 
 <h3 class="text-success mt-5 mb-4 text-center">معرضنا</h3>
-<div class="row g-3">
-  
-  <div class="col-6 col-md-2 col-five">
-    <img src="ورشتنـــــــــا الفنية.png" class="gallery-img shadow" alt="نشاط">
+<div class="row g-5 gallery_me container">
+  <div class="wah">
+    <img src="./media/كاراتيه.jpeg" class="gallery-img shadow" style="width: 300px;height: 450px;" alt="نشاط">
   </div>
-  <div class="col-6 col-md-2 col-five">
-    <img src="ورشتنـــــــــا الفنية.png" class="gallery-img shadow" alt="نشاط">
+  <div class="wah">
+    <img src="./media/WhatsApp Image 2026-07-14 at 2.32.35 PM (1).jpeg" class="gallery-img shadow" style="width: 300px;height: 450px;" alt="نشاط">
   </div>
-  <div class="col-6 col-md-2 col-five">
-    <img src="ورشتنـــــــــا الفنية.png" class="gallery-img shadow" alt="نشاط">
+  <div class="wah">
+    <img src="./media/WhatsApp Image 2026-07-14 at 2.32.35 PM.jpeg" class="gallery-img shadow" style="width: 300px;height: 450px;" alt="نشاط">
+  </div> 
+  <div class="wah">
+    <img src="./media/WhatsApp Image 2026-07-14 at 2.32.36 PM (1).jpeg" class="gallery-img shadow" style="width: 300px;height: 450px;" alt="نشاط">
+  </div> 
+  <div class="wah">
+    <img src="./media/WhatsApp Image 2026-07-14 at 2.32.36 PM (2).jpeg" class="gallery-img shadow" style="width: 300px;height: 450px;" alt="نشاط">
+  </div> 
+  <div class="wah">
+    <img src="./media/WhatsApp Image 2026-07-14 at 2.32.36 PM (3).jpeg" class="gallery-img shadow" style="width: 300px;height: 450px;" alt="نشاط">
+  </div> 
+  <div class="wah">
+    <img src="./media/WhatsApp Image 2026-07-14 at 2.32.36 PM.jpeg" class="gallery-img shadow" style="width: 300px;height: 450px;" alt="نشاط">
+  </div> 
+  <div class="wah">
+    <img src="./media/WhatsApp Image 2026-07-14 at 2.32.37 PM (2).jpeg" class="gallery-img shadow" style="width: 300px;height: 450px;" alt="نشاط">
+  </div> 
+  <div class="wah">
+    <img src="./media/WhatsApp Image 2026-07-14 at 2.32.37 PM (3).jpeg" class="gallery-img shadow" style="width: 300px;height: 450px;" alt="نشاط">
+  </div> 
+  <div class="wah">
+    <img src="./media/WhatsApp Image 2026-07-14 at 2.32.37 PM (4).jpeg" class="gallery-img shadow" style="width: 300px;height: 450px;" alt="نشاط">
+  </div> 
+  <div class="wah">
+    <img src="./media/WhatsApp Image 2026-07-14 at 2.32.37 PM.jpeg" class="gallery-img shadow" style="width: 300px;height: 450px;" alt="نشاط">
+  </div> 
+  <div class="wah">
+    <img src="./media/WhatsApp Image 2026-07-14 at 2.32.38 PM.jpeg" class="gallery-img shadow" style="width: 300px;height: 450px;" alt="نشاط">
   </div>
-  <div class="col-6 col-md-2 col-five">
-    <img src="ورشتنـــــــــا الفنية.png" class="gallery-img shadow" alt="نشاط">
-  </div>
-  <div class="col-6 col-md-2 col-five">
-    <img src="ورشتنـــــــــا الفنية.png" class="gallery-img shadow" alt="نشاط">
-  </div>
-  <div class="col-6 col-md-2 col-five">
-    <img src="ورشتنـــــــــا الفنية.png" class="gallery-img shadow" alt="نشاط">
-  </div>
-  <div class="col-6 col-md-2 col-five">
-    <img src="ورشتنـــــــــا الفنية.png" class="gallery-img shadow" alt="نشاط">
-  </div>
-  <div class="col-6 col-md-2 col-five">
-    <img src="ورشتنـــــــــا الفنية.png" class="gallery-img shadow" alt="نشاط">
-   </div>
-  <div class="col-6 col-md-2 col-five">
-    <img src="ورشتنـــــــــا الفنية.png" class="gallery-img shadow" alt="نشاط">
-  </div>
-  
+  <div class="wah">
+    <img src="./media/WhatsApp Image 2026-07-14 at 2.32.38 PM (1).jpeg" class="gallery-img shadow" style="width: 300px;height: 550px;" alt="نشاط">
+  </div> 
 </div>
 <h3 class="text-success mt-5 mb-5 text-center">فيديوهات تعريفية</h3>
 <div class="mibombo">
   <div class="container videos1">
-    <img src="Capture.PNG" alt="Thumbnail" class="video-img" style="width: 300px;height: 300px;border-radius: 500px;">
-    <a href="https://www.youtube.com/watch?v=e4jG8FiPfVc" target="_blank" class="text-end w-2 text-success text-decoration-none fw-semibold linky">..........فيديو عن </a>
+    <img src="./media/football.PNG" alt="Thumbnail" class="video-img" style="width: 300px;height: 300px;border-radius: 500px;">
+    <a href="https://drive.google.com/file/d/1_YaZJSPm1OLr1uO8cYCXsK_ZhnHLoyWe/view?usp=sharing" target="_blank" class="text-end w-2 text-success text-decoration-none fw-semibold linky">كرة القدم</a>
   </div>
   <div class="container videos2">
-    <img src="Capture.PNG" alt="Thumbnail" class="video-img" style="width: 300px;height: 300px;border-radius: 500px;">
-    <a href="https://www.youtube.com/watch?v=e4jG8FiPfVc" target="_blank" class="text-end w-2 text-success text-decoration-none fw-semibold linky">..........فيديو عن </a>
+    <img src="./media/kickboxing.PNG" alt="Thumbnail" class="video-img" style="width: 300px;height: 300px;border-radius: 500px;">
+    <a href="https://drive.google.com/file/d/13LWouEuYwuUgVXl6_4IUDtFnwWmd07LN/view?usp=sharing" target="_blank" class="text-end w-2 text-success text-decoration-none fw-semibold linky">كيك بوكس</a>
   </div>
   <div class="container videos1">
-    <img src="Capture.PNG" alt="Thumbnail" class="video-img" style="width: 300px;height: 300px;border-radius: 500px;">
-    <a href="https://www.youtube.com/watch?v=e4jG8FiPfVc" target="_blank" class="text-end w-2 text-success text-decoration-none fw-semibold linky">..........فيديو عن </a>
+    <img src="./media/karate.PNG" alt="Thumbnail" class="video-img" style="width: 300px;height: 300px;border-radius: 500px;">
+    <a href="https://drive.google.com/file/d/1TVohI4roqNjEtfibmDO87E_srTFITGoZ/view?usp=sharing" target="_blank" class="text-end w-2 text-success text-decoration-none fw-semibold linky">كاراتيه</a>
   </div>
-  <div class="container videos2">
-    <img src="Capture.PNG" alt="Thumbnail" class="video-img" style="width: 300px;height: 300px;border-radius: 500px;">
-    <a href="https://www.youtube.com/watch?v=e4jG8FiPfVc" target="_blank" class="text-end w-2 text-success text-decoration-none fw-semibold linky">..........فيديو عن </a>
-  </div>
+  
   
 </div>
 
@@ -431,7 +526,7 @@
             <div class="col-md-4 mb-4 mb-md-0">
                 <h5 class="fw-bold mb-3">تواصل معنا</h5>
                 <p class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i>حلمية الزيتون - القاهرة</p>
-                <p class="mb-0"><i class="bi bi-telephone-fill me-2"></i>اتصل بنا: 01278071535</p>
+                <a style="height: 50px !important;width: 50px !important;" class="mb-0 facebook" title="Facebook" target="_blank"  href="https://www.facebook.com/profile.php?id=100064895162398"><h1 class="fab fa-facebook-f"></h1></a>
             </div>
         </div>
         
@@ -442,11 +537,11 @@
             <p class="mb-2">&copy; جميع الحقوق محفوظة لجوالة مركز حلمية الزيتون</p>
             <div class="pb-2 text-white">
               Development by: 
-                <a href="profile.html" class="text-white text-decoration-none fw-semibold">
+                <a href="profile.html" target="_blank" class="text-white text-decoration-none fw-semibold">
                     Philopateer Arnst
                 </a>
                 and
-                <a href="mohamed.html" class="text-white text-decoration-none fw-semibold">
+                <a href="mohamed.html" target="_blank" class="text-white text-decoration-none fw-semibold">
                     Mohamed Sameh
                 </a>
             </div>
